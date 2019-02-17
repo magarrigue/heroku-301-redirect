@@ -4,9 +4,9 @@
 RewriteEngine on
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^oldwebsite.com [NC]
-RewriteRule ^(.*)$ http://newwebsite.com/$1 [L,R=301,NC]
+RewriteCond %{HTTP_HOST} ^brainlinks.com [NC]
+RewriteRule ^(.*)$ https://www.toguna.io/$1 [L,R=301,NC]
 
 #redirection for www
-RewriteCond %{HTTP_HOST} ^www.oldwebsite.com [NC]
-RewriteRule ^(.*)$ http://www.newwebsite.com/$1 [L,R=301,NC]
+RewriteCond %{HTTP_HOST} ^www.brainlinks.com [NC]
+RewriteRule ^(.*)$ https://www.toguna.io/$1 [L,R=301,NC]
